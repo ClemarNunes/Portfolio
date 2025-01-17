@@ -1,0 +1,29 @@
+.SkillItem{
+    height: 58px;
+    
+    width: 58px;
+
+    height: 120px;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+ 
+    background-color: rgb(48, 27, 241);
+ 
+    /* margin-left: 0px; */
+ 
+   height: 100%;
+   position: relative;
+   margin-top: 4px;
+   background-color: rgb(40, 40, 40);
+   flex-direction: column;
+   justify-content: space-around;
+   padding-top: 15px;
+   
+    
+}
+
+ 
+ 

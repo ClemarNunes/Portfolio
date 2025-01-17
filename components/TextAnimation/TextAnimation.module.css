@@ -1,4 +1,4 @@
-.Container {
+/* .Container {
     height: 100%;
     width: 100%;
     display: flex;
@@ -27,12 +27,12 @@
     flex-direction: column;
     font-size: 60px;
     
-}
+} */
  
-
+/* 
 .title {
     animation-name: moveLeft;
-    /* animation-name: moveUp; */
+    
     animation-duration: 1.4s;
     animation-duration: 1.s;
     font-size: 45px;
@@ -40,15 +40,15 @@
 
 .titleTwo {
     animation-name: moveLeft;
-    /* animation-name: moveUp; */
+   
     animation-duration: 1.5s;
     animation-duration: 2s;
     font-size: 45px;
-}
-
+} */
+/* 
 .titleThree {
     animation-name: moveLeft;
-    /* animation-name: moveUp; */
+ 
     animation-duration: 0.9s;
     animation-duration: 3s;
     color: #000;
@@ -67,8 +67,8 @@
 }
 .foto{
      
-}
-
+} */
+/* 
 .logo{
 
     width: 100%;
@@ -190,13 +190,264 @@
 
         padding: 6px 12px;
     }
+} */
+
+
+
+
+/* 
+.medias{
+    
+    width: 110px;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    display: flex;
+}
+
+.gitMidia a{
+    height: 50px;
+     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    
+}
+
+.linkMedia a{
+    
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+}
+ 
+
+  .gitMidia:hover{
+    transform: scale(1.1);
+  }
+ 
+.linkMedia:hover{
+    transform: scale(1.1);
+}
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+ .Container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    
+}
+
+.ContainerArea  {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 50px;
+    color: #000;
+    text-shadow: 12px 3px 22px #494949;
+     
+    
+}
+
+
+.titles{
+    color: #000;
+    font-weight: bold;
+    margin-left: 130px;
+    width: 90%;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    font-size: 60px;
+    font-family: cursive;
+     
+}
+ 
+
+.title {
+    animation-name: moveLeft;
+    /* animation-name: moveUp; */
+    animation-duration: 1.4s;
+    animation-duration: 1.s;
+    font-size: 45px;
+
+     
+
+   
+    
+}
+
+.titleTwo {
+    animation-name: moveLeft;
+    /* animation-name: moveUp; */
+    animation-duration: 1.5s;
+    animation-duration: 2s;
+    font-size: 45px;
+    
+     
+    
+}
+
+.titleThree {
+    animation-name: moveLeft;
+    /* animation-name: moveUp; */
+    animation-duration: 0.9s;
+    animation-duration: 3s;
+    color: #000;
+    font-size: 60px;
+
+    /* border-bottom: 2px solid rgb(47, 253, 236); */
+    width: 570px;
+   
+    
+   
+}
+
+.text {
+    font-size: 38px;
+    color: #000;
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    animation-name: moveRight;
+    animation-duration: 3.0s;
+
+    font-family: cursive;
+
+    
+}
+ 
+
+@keyframes moveRight {
+    0% {
+        opacity: 0;
+        transform: translateX(300px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-550px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+
+@keyframes moveUp {
+    0%{
+        opacity: 0;
+        transform: translateY(150px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@media screen and (max-width: 1100px){
+    .home-intro {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        margin: 0;
+        padding-left: 80px;
+
+    }
+
+    .home-image {
+        display: none;
+    }
+    .button{
+        pad: 10px 20px;
+
+    }
+
+    
+}
+
+
+@media screen and (max-width: 800px){
+    .home-intro{
+        padding-left: 40px;
+        font-size: 40px;
+
+    }
+
+    .home-image{
+        display: none;
+    }
+
+    .button{
+        padding: 8px 16px;
+
+    }
+
+
+}
+
+@media screen and (max-width: 600px){
+    .home-intro{
+        font-size: 30px;
+    }
+    .text{
+        font-size: 24px;
+    }
+
+    .button {
+
+        padding: 6px 12px;
+    }
 }
 
 
 
 
 
-.medias{
+.midias{
     /* border: 1px solid red; */
     width: 110px;
     justify-content: space-between;
@@ -233,6 +484,13 @@
     transform: scale(1.1);
 }
   
+
+
+
+
+
+
+
 
 
 

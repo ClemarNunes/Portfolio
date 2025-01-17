@@ -1,4 +1,17 @@
-.Container{
+/* .Container{
+    display: flex;
+   
+    height: 100%;
+ 
+  
+
+}
+ */
+
+
+
+
+ .Container{
     display: flex;
    
     height: 100%;
@@ -7,3 +20,51 @@
 
 }
 
+.leftSide{
+  width: 60%;
+  height: 100%;
+
+ 
+  
+}
+.rightSide{
+  width: 40%;
+  height: 100%;
+   
+}
+
+
+.logo{
+  
+  width: 100%;
+  padding-left: 110px;
+  display: flex;
+  font-size: 17px;
+  align-items: center;
+  padding-top: 15px;
+}
+
+.logoInfo{
+  display: flex;
+  margin-left: 5px;
+  flex-direction: column;
+  text-shadow: 12px 3px 22px #494949;
+  
+}
+
+.logoInfo1{
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: none;
+}
+
+.logoInfo2{
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.foto{
+ 
+  padding-top: 5px;
+  padding-left: 50px;
+}
