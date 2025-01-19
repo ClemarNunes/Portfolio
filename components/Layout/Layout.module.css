@@ -6,7 +6,8 @@
     /* box-sizing: content-box; */
     overflow-x: hidden;
     
-    background-image: linear-gradient(#e8ebe8 60%, rgb(124, 119, 119) );
+    /* background-image: linear-gradient(#e8ebe8 60%, rgb(124, 119, 119) ); */
+    background-color: #fff;
     box-sizing: border-box;
 }
 

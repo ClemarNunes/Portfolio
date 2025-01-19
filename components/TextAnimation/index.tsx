@@ -80,7 +80,7 @@ const TextAnimation = () => {
     const [state] = useState({
         title: "Hi,",
         titleTwo: "I'm Clemar",
-        titleThree: 'Font End Developer',
+        titleThree: 'Front End Developer',
         image: '/assets/teste.png'
     })
 

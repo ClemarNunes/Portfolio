@@ -1,0 +1,54 @@
+.containerMobile {
+    display: none;
+    width: 37px;
+    height: 32px;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    border-radius: 5px;
+  }
+  
+  .mobileAreaBar {
+    width: 75%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3px 0px;
+  }
+  
+  .mobileBar {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+  }
+
+
+  .MenuMobile{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    height: calc(100vh - 100px);
+    width: 70%;
+    max-width: 350px;
+    display: flex;
+    z-index: 111;
+    justify-content: flex-end;
+    background-color: rgba(0, 0, 0, 0.8);
+  
+    flex-direction: column;
+   
+    align-items: center;
+    justify-content: flex-start;
+   
+  }
+
+
+  @media (max-width: 400px) {
+    .containerMobile {
+      display: flex;
+    }
+  }

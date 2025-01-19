@@ -275,7 +275,7 @@
     align-items: center;
     font-size: 50px;
     color: #000;
-    text-shadow: 12px 3px 22px #494949;
+    /* text-shadow: 12px 3px 22px #494949; */
      
     
 }
@@ -290,8 +290,12 @@
     display: flex;
     flex-direction: column;
     font-size: 60px;
-    font-family: cursive;
-     
+    /* font-family: cursive; */
+    font-family: "PT Serif";
+  /* font-weight: 700; */
+  /* font-style: italic; */
+  /* font-family: "Helvetica Now Display DW", sans-serif; */
+  
 }
  
 
@@ -303,7 +307,7 @@
     font-size: 45px;
 
      
-
+    
    
     
 }
@@ -326,11 +330,12 @@
     animation-duration: 3s;
     color: #000;
     font-size: 60px;
-
-    /* border-bottom: 2px solid rgb(47, 253, 236); */
-    width: 570px;
-   
     
+    /* border: 1px solid red; */
+    /* border-bottom: 2px solid rgb(47, 253, 236); */
+    width: 620px;
+   
+    text-shadow: 1px 1px 1px #151515;
    
 }
 
@@ -342,10 +347,9 @@
     margin-top: 10px;
     animation-name: moveRight;
     animation-duration: 3.0s;
-
     font-family: cursive;
-
-    
+    font-family: "PT Serif";
+    /* font-family: "Helvetica Now Display DW", sans-serif; */
 }
  
 

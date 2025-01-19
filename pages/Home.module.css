@@ -42,13 +42,14 @@
   font-size: 17px;
   align-items: center;
   padding-top: 15px;
+  color: black;
 }
 
 .logoInfo{
   display: flex;
   margin-left: 5px;
   flex-direction: column;
-  text-shadow: 12px 3px 22px #494949;
+  text-shadow: 3px 1px 10px #c3c1c1;
   
 }
 
@@ -56,6 +57,7 @@
   font-size: 24px;
   font-weight: bold;
   text-shadow: none;
+
 }
 
 .logoInfo2{
@@ -66,5 +68,7 @@
 .foto{
  
   padding-top: 5px;
-  padding-left: 50px;
+  /* padding-left: 50px; */
+ 
 }
+ 
