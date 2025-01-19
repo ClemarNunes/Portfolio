@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const Header = () => {
     return(
-        <header>
+        <header className={styles.Header}>
             <nav className={styles.NavArea}>
                 <div className={styles.Container}>
                     <ul>
