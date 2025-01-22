@@ -4,36 +4,45 @@
     width: 100%;
     z-index: 1;
     display: flex;
-    padding: 30px;
+    padding: 29px 50px;
+    justify-content: space-between;
+    margin-top: 30px;
+   
+   
 }
 
 
 .projectArea {
     width: 41%;
+    max-width: 500px;
     height: 90%;
 }
 
 .ProjectInfo {
-    justify-content: end;
     width: 50%;
     height: 100%;
     display: flex;
     flex-direction: column;
-    padding: 40px;
+    color: #000;
+    font-family: "PT Serif";
 }
 
 .titleRight {
     margin-bottom: 20px;
     font-weight: bold;
-    font-size: 18px;
+    font-size: 25px;
+    
 
 }
 
 .descriptionRight {
     margin-bottom: 10px;
     font-weight: 600;
-    font-size: 16px;
-    font-family: 'Courier New', Courier, monospace;
+    font-size: 19px;
+    width: 400px;
+    height: auto;
+    margin-bottom: 20px;
+    color: #696666;
 }
 
 .buttonRight {
@@ -47,6 +56,7 @@
     box-shadow: 0px 0px 5px #000;
     cursor: pointer;
     font-size: 10px;
+    
 }
 
 .buttonRight:hover {
@@ -76,6 +86,7 @@
     font-size: 28px;
     font-weight: bolder;
     cursor: pointer;
+   
 
 
 }
@@ -96,4 +107,5 @@
 
 .tela:hover {
     background-color: rgba(0, 0, 0, 0.7);
+    
 }

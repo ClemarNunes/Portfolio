@@ -15,7 +15,10 @@
     display: flex;
    
     height: 100%;
- 
+    height: calc(100vh - 150px);
+    /* border: 1px solid red; */
+    /* background-color: blue; */
+   
   
 
 }
@@ -23,52 +26,45 @@
 .leftSide{
   width: 60%;
   height: 100%;
-
+  /* border: 1px solid red; */
  
   
 }
 .rightSide{
   width: 40%;
   height: 100%;
-   
+   /* border: 1px solid red; */
 }
 
 
-.logo{
-  
-  width: 100%;
-  padding-left: 110px;
-  display: flex;
-  font-size: 17px;
-  align-items: center;
-  padding-top: 15px;
-  color: black;
-}
 
-.logoInfo{
-  display: flex;
-  margin-left: 5px;
-  flex-direction: column;
-  text-shadow: 3px 1px 10px #c3c1c1;
-  
-}
 
-.logoInfo1{
-  font-size: 24px;
-  font-weight: bold;
-  text-shadow: none;
+ 
 
-}
-
-.logoInfo2{
-  font-size: 12px;
-  font-weight: bold;
-}
+ 
 
 .foto{
  
-  padding-top: 5px;
-  /* padding-left: 50px; */
+  
+  height: 100%;
+   
+ 
  
 }
  
+
+@media(max-width: 330px){
+  .Container{
+    width: 100%;
+    height: 100%;
+  }
+
+.leftSide{
+  width: 100%;
+  height: 100%;
+}
+
+  .rightSide{
+    display: none;
+  }
+}

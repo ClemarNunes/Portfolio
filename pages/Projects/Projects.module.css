@@ -17,7 +17,9 @@
     
 }
 
-.title {}
+.title {
+    color: #000;
+}
 
 .projects {
     width: 100%;

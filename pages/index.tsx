@@ -17,23 +17,18 @@
 // export default Home;
 
 
+import Logo from '../components/Logo';
 import TextAnimation from '../components/TextAnimation';
 import styles from './Home.module.css'
 
 
 const Home = () => {
   return (
-    <div className={styles.Container}>
+    <main className={styles.Container}>
 
       <div className={styles.leftSide}>
 
-        <div className={styles.logo}>
-          <img src="/assets/c.png" width={40} height={'auto'} alt="icon-logo" />
-          <div className={styles.logoInfo}>
-            <span className={styles.logoInfo1}>Clemar Nunes</span>
-            <span className={styles.logoInfo2}>W E B & U I D E S I G N E R</span>
-          </div>
-        </div>
+        {/* <Logo /> */}
 
         <TextAnimation />
 
@@ -47,7 +42,7 @@ const Home = () => {
         </div>
       </div>
       
-    </div>
+    </main>
   );
 }
 

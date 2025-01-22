@@ -17,7 +17,7 @@ const Projects = () => {
     }
 
     return (
-        <div className={styles.Container}>
+        <main className={styles.Container}>
             <div className={styles.areaProject}>
 
                 <div className={styles.title}>
@@ -37,7 +37,7 @@ const Projects = () => {
                 <Modal modalStatus={modalStatus} setModalStatus={setModalStatus} data={modalData} />
                  
             </div>
-        </div>
+        </main>
     );
 }
 

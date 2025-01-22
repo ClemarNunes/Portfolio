@@ -1,0 +1,133 @@
+$primary-color: #000;
+$secondary-color: #1f2222;
+$text-color: #fff;
+$gradient-color: linear-gradient(270deg, #69e678 33%, #29ccc4 66%, #17161d 100%);
+$font-family: "Saira", sans-serif;
+
+@mixin flex-content($display: flex, $justify: center){
+    display: $display;
+    justify-content: $justify;
+    
+}
+
+ 
+
+.Header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    padding: 0px 50px;
+    background-color: $primary-color;
+ }
+
+ .AreaLogo{
+    width: 50%;
+    height: 100%;
+    @include flex-content(flex, left)
+ }
+
+ .NavArea{
+    width: 50%;
+    height: 100%;
+    @include flex-content;
+    font-family: Saira, sans-serif;
+    border-bottom: 1px solid $secondary-color;
+
+    ul{
+        width: 70%;
+        @include flex-content(flex, space-between);
+        list-style: none;
+        align-items: center;
+        font-size: 17px;
+        color: $text-color;
+    }
+ }
+ 
+ 
+
+.divisao{
+    position: relative;
+    display: block;
+    padding-bottom: 3px;
+}
+
+.divisao::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: blue;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -7px;
+    left: 0;
+    background: $gradient-color;
+    transform-origin: bottom right;
+    transition: transform 0.5s cubic-bezier(0.86, 0, 0.07, 1);
+    
+}
+
+.divisao:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    
+    
+}
+
+
+
+@mixin header-styles($padding: 10px 20px) {
+    display: flex;
+    justify-content: space-between;
+    padding: $padding;
+    align-items: center;
+  }
+ 
+@media (max-width: 330px) {
+    .Header{
+        @include header-styles;
+    }
+    .AreaLogo{
+        width: 70%;
+    }
+    .NavArea{
+        display: none;
+    }
+  }
+
+  @media (min-width: 331px) and (max-width:480px) {
+    .Header{
+        @include header-styles;
+    }
+    .AreaLogo{
+        width: 70%;
+    }
+    .NavArea{
+        display: none;
+    }
+  } 
+  
+  @media (min-width: 481px) and (max-width: 760px) {
+    .Header{
+        @include header-styles;
+    }
+    .AreaLogo{
+        width: 70%;
+    }
+    .NavArea{
+        display: none;
+    }
+  }
+
+  @media (min-width: 761px) and (max-width: 960px) {
+
+  }
+
+  @media (min-width: 961px) and (max-width: 1024px) {
+
+  }
+
+  @media (min-width: 1200px){
+
+  }
+
+

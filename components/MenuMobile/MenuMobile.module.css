@@ -6,6 +6,7 @@
     justify-content: center;
     background-color: #000;
     border-radius: 5px;
+    /* border: 1px solid red; */
   }
   
   .mobileAreaBar {
@@ -18,18 +19,20 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 3px 0px;
+    
   }
   
   .mobileBar {
     width: 100%;
     height: 2px;
     background-color: #fff;
+    
   }
 
 
   .MenuMobile{
     position: absolute;
-    top: 0px;
+    top: 80px;
     right: 0;
     height: calc(100vh - 100px);
     width: 70%;
@@ -43,12 +46,69 @@
    
     align-items: center;
     justify-content: flex-start;
-   
+    /* border: 1px solid blue;  */
   }
 
-
-  @media (max-width: 400px) {
+  @media (max-width: 330px) {
     .containerMobile {
       display: flex;
     }
   }
+
+  @media (min-width: 331px) and (max-width:480px) {
+    .containerMobile {
+      display: flex;
+    }
+  } 
+  
+  @media (min-width: 481px) and (max-width: 760px) {
+    .containerMobile {
+      display: flex;
+    }
+  }
+
+  @media (min-width: 761px) and (max-width: 960px) {
+
+  }
+
+  @media (min-width: 961px) and (max-width: 1024px) {
+
+  }
+
+  @media (min-width: 1200px){
+
+  }
+
+/* 
+  @media (max-width: 400px) {
+    .containerMobile {
+      display: flex;
+    }
+  } */
+
+
+
+/* 
+  @media (min-width: 330px) {
+     
+  }
+
+  @media (min-width: 331px) and (max-width:480px) {
+
+  } 
+  
+  @media (min-width: 481px) and (max-width: 760px) {
+
+  }
+
+  @media (min-width: 761px) and (max-width: 960px) {
+
+  }
+
+  @media (min-width: 961px) and (max-width: 1024px) {
+
+  }
+
+  @media (min-width: 1200px){
+    
+  } */

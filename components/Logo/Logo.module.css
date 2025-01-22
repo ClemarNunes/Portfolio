@@ -1,0 +1,52 @@
+
+.logo{
+  
+    width: 100%;
+    /* padding-left: 0px; */
+    display: flex;
+    font-size: 17px;
+    align-items: center;
+    /* padding-top: 15px; */
+    color: black;
+    color: white;
+    /* border: 1px solid red; */
+  }
+  
+  .logoInfo{
+    display: flex;
+    margin-left: 5px;
+    flex-direction: column;
+    text-shadow: 3px 1px 10px #c3c1c1;
+    /* border: 1px solid blue; */
+  }
+  
+  .logoInfo1{
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: none;
+    /* border: 1px solid red; */
+  
+  }
+  
+  .logoInfo2{
+    font-size: 12px;
+    font-weight: bold;
+  }
+
+
+  @media(max-width: 400px){
+    .logo{
+        font-size: 10px;
+        /* align-items: left; */
+        /* border: 1px solid blue; */
+    }
+
+    .logoInfo1{
+        font-size: 15px;
+        /* border: 1px soid red; */
+    }
+
+    .logoInfo2{
+        font-size: 11px;
+    }
+  }
