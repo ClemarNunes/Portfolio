@@ -38,7 +38,7 @@ const Home = () => {
         <div className={styles.foto}>
 
           <img src="/assets/port2.png" height={`auto`} width={`${400}`} alt=""  />
-          {/* <img src="/assets/port2.png" /> */}
+           
         </div>
       </div>
       
