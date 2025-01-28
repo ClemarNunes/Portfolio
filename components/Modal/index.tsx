@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import styles from './Modal.module.css';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 type Props = {
     modalStatus: boolean;
@@ -91,7 +92,11 @@ const Modal = ({ modalStatus, setModalStatus, data, }: Props) => {
                     <div className={styles.ModalImg} style={{marginLeft: (valueChangeImg >= 0 ? (`${valueChangeImg * -100}%` ) : 0), transition: '1'}}>
 
                         {data.images.map((item, index) => (
-                            <img key={index} src={item} width={`${750}`} height={`${100}%`}   alt="" />
+                            // <img key={index} src={item} width={`${750}`} height={`${100}%`}   alt="" />
+                           
+                            // <Image src={item} layout='fill'   key={index} />
+                            <Image src={item} width={750} height={500}     />
+                            // <img key={index} src={item} width={`${290}`} height={`${350}`} alt="" />
                         ))}
                                            
                     </div>

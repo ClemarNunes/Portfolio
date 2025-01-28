@@ -21,6 +21,7 @@
   justify-content: center;
   font-family: Saira, sans-serif;
   border-bottom: 1px solid #1f2222;
+   
 }
 .NavArea ul {
   width: 70%;
@@ -30,6 +31,7 @@
   align-items: center;
   font-size: 17px;
   color: #fff;
+  /* border: 1px solid red; */
 }
 
 .divisao {
@@ -107,10 +109,22 @@
 }
 @media ( (min-width: 761px) and ( max-width: 960px) ){
   .NavArea{
-    width: 70%;
+    width: 80%;
+    max-width: 420px;
   }
 
   .NavArea ul {
-    width: 100%;
+    width: 90%;
+  }
+}
+
+@media ((min-width: 961px) and (max-width: 1200px)){
+  .NavArea{
+    width: 70%;
+    max-width: 500px;
+  }
+
+  .NavArea ul {
+    width: 80%;
   }
 }

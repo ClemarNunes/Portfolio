@@ -18,7 +18,7 @@ export const dados = [
         id: 2,
         image: '/assets/mockup.jpg', 
         titleProject: 'LandingPage', 
-        description: 'An intuitive and easy-to-use online.',
+        description: 'An intuitive and easy-to-use online platform. The idea was to not only offer a varied selection of flavors but also provide an experience that was visually appealing and easy to navigate.',
         images: [
              
             '/assets/landing.png',

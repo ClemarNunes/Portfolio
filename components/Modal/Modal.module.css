@@ -138,3 +138,46 @@
     width: auto;
     
 }
+
+
+@media(max-width: 330px){
+    .ModalBody{
+        width: 750px;
+        width: 290px;
+        height: 400px;
+        overflow-x: hidden;
+        border: 1px solid blue;
+         
+    }
+    
+    .ModalImg{
+        width: 500%;
+        height: 80%;
+        /* overflow: hidden; */
+        margin-left: 0%;
+        transition: 1s;
+        /* position: relative; */
+    }
+}
+
+@media((min-width: 331px) and (max-width: 480px)){
+   
+
+    .ModalBody{
+        width: 330px;
+        height: 400px;
+        overflow-x: hidden;
+         
+    }
+    
+    .ModalImg{
+        width: 500%;
+        height: 80%;
+        overflow: hidden;
+        overflow: none;
+        margin-left: 0%;
+        transition: 1s;
+         /* position: relative; */
+        
+    }
+}
