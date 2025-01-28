@@ -22,8 +22,10 @@ const Animation = ({ children }: any) => {
 
  
   
-        // transition={{repeat:Infinity,delay:1,ease:"easeInOut",type:"spring"}}
+        
     );
 }
 
 export default Animation;
+
+// transition={{repeat:Infinity,delay:1,ease:"easeInOut",type:"spring"}}

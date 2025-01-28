@@ -4,7 +4,7 @@ import { skillDados } from '../../helpers/skillDados';
 
 const Skills = () => {
     return (
-        <div className={styles.Container}>
+        <main className={styles.Container}>
 
             <div className={styles.skillsArea}>
 
@@ -28,7 +28,7 @@ const Skills = () => {
 
             </div>
 
-        </div>
+        </main>
     );
 }
 

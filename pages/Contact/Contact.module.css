@@ -3,18 +3,17 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-  
     display: flex;
 }
 
 .ContactArea{
     flex: 1;
-    /* border: 1px solid blue; */
     height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    color: #000;
 }
 
 
@@ -48,11 +47,11 @@
 .contactInformationEmail{
     display: flex;
     justify-content: space-between;
+    width: 223px;
 }
 
 .contactInformation{
     display: flex;
-    /* border: 1px solid blue; */
     align-items: center;
    
     
