@@ -1,19 +1,9 @@
 .SkillItem{
-    height: 58px;
-    
-    width: 58px;
-
-    height: 120px;
     width: 120px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
- 
     background-color: rgb(48, 27, 241);
- 
-    /* margin-left: 0px; */
- 
    height: 100%;
    position: relative;
    margin-top: 4px;
@@ -21,9 +11,92 @@
    flex-direction: column;
    justify-content: space-around;
    padding-top: 15px;
-   
-    
+}
+
+.imageArea{
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+ 
+.titleArea{
+    /* font-size: 12px; */
+}
+ 
+
+@media(max-width: 330px){
+    .SkillItem{
+        width: 98%;
+        height: 296px;
+        margin-top: 0px;
+        justify-content:center;
+    }   
+    .imageArea{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 30px;
+    } 
+    .titleArea{
+        font-size: 23px;
+    }
+}
+
+
+@media( (min-width: 331px) and (max-width: 480px) ){
+    .SkillItem{
+        width: 98%;
+        height: 296px;
+        margin-top: 0px;
+        justify-content:center;
+    }   
+    .imageArea{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 30px;
+    } 
+    .titleArea{
+        font-size: 23px;
+    }
+}
+
+@media( (min-width: 481px) and (max-width: 760px ) ){
+    .SkillItem{
+        width: 98%;
+        height: 296px;
+        margin-top: 0px;
+        justify-content:center;
+    }   
+    .imageArea{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 30px;
+    } 
+    .titleArea{
+        font-size: 23px;
+    }
 }
 
  
- 
+@media( (min-width: 761px) and (max-width: 960px) ){
+    .SkillItem{
+        width: 98%;
+        height: 296px;
+        margin-top: 0px;
+        justify-content:center;
+    }   
+    .imageArea{
+        width: 100px;
+        height: 100px;
+        margin-bottom: 30px;
+    } 
+    .titleArea{
+        font-size: 23px;
+    }
+}
+
+
+@media( (min-width: 961px) and ( max-width: 1200px) ) {
+    .SkillItem{
+         
+    }
+}
