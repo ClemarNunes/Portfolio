@@ -9,7 +9,7 @@ const createUserFormSchema = z.object({
         .nonempty('Name is required'),
     email: z.string()
         .nonempty('Email is required'),
-    Subject: z.string()
+    subject: z.string()
         .nonempty('Subject is Required'),
   
 
@@ -50,6 +50,7 @@ const Form = () => {
                         {...register('name')}
                         onChange={e => setNameInput(e.target.value)}
                         autoComplete='off'
+                        id="name"
                     />
                     
                     <div className={styles.barra}></div>
@@ -68,6 +69,7 @@ const Form = () => {
                         {...register('email')}
                         onChange={e => setEmailInput(e.target.value)}
                         autoComplete='off'
+                        id='email'
                     />
                     <div className={styles.barra}></div>
                     <label htmlFor="email">Email:</label>
@@ -81,27 +83,20 @@ const Form = () => {
                         type="text"
                         value={assuntoInput}
                         placeholder='Enter subject'
-                        {...register('Subject')}
+                        {...register('subject')}
                         onChange={e => setAssuntoInput(e.target.value)}
                         autoComplete='off'
+                        id='subject'
                     />
                     <div className={styles.barra}></div>
                     <label htmlFor="subject">Subject:</label>
-                    {errors.Subject && <span className={styles.error}>{errors.Subject.message}</span>}
+                    {errors.subject && <span className={styles.error}>{errors.subject.message}</span>}
                 </div>
                
                
                 <div className={styles.message}>
-                    
-                    
                     <textarea   name="message" id="" cols={30} rows={10} placeholder='Enter your message here...'>
-                            
                     </textarea>
-                     
-                  
-                    
-                  
-
                 </div>
                 
                 

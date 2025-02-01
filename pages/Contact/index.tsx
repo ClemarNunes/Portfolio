@@ -3,7 +3,7 @@ import Form from '../../components/Form'
 
 const Contact = () => {
     return (
-        <div className={styles.Container}>
+        <main className={styles.Container}>
 
             <div className={styles.ContactArea}>
                 <h1>CONTACT WITH ME</h1>
@@ -31,7 +31,7 @@ const Contact = () => {
             <div className={styles.FormArea}>
                 <Form />
             </div>
-        </div>
+        </main>
     );
 }
 

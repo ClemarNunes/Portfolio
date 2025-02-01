@@ -2,8 +2,10 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100%;
+    height: auto;
     display: flex;
+    min-height: calc(100vh - 150px);
+    
 }
 
 .ContactArea{
@@ -21,10 +23,10 @@
 .FormArea{
     flex: 1;
     height: 100%;
-    /* border: 1px solid red; */
     display: flex;
     align-items: center;
     justify-content: center;
+     
 }
 .border{
     height: 3px;
@@ -37,7 +39,7 @@
    display: flex;
    justify-content: center;
    flex-direction: column;
-    margin-top: 20px;
+   margin-top: 20px;
    width: 250px;
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    height: 150px;
@@ -62,7 +64,6 @@
 }
 
 .contactIcon{
-    /* border: 1px solid    green; */
     justify-content: space-between;
     display: flex;
     flex-direction: column;
@@ -72,4 +73,128 @@
 .contactInformationEmail img:hover,.contactInformation img:hover {
     transform: scale(1.1);
 
+}
+
+
+@media(max-width: 330px){
+    .Container{
+        width: 100%;
+        min-height: calc(100vh - 150px);
+        flex-direction: column;
+    }
+    .ContactArea{
+    
+    }
+    .ContactArea h1{
+        font-size: 19px;
+        margin-top: 20px;
+    }
+    .contactInformationArea{
+        height: 130px;
+        margin-bottom: 10px;
+    }
+    .FormArea{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media ( (min-width: 331px) and (max-width: 480px)) {
+    .Container{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    .ContactArea{
+        height: 100%;
+        flex: none;
+    }
+
+    .FormArea{
+        width: 100%;
+        height: 100%;
+        flex: none;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    .ContactArea h1{
+        font-size: 19px;
+        margin-top: 20px;
+    }
+    .contactInformationArea{
+        height: 130px;
+        margin-bottom: 10px;
+       
+    }
+  
+}
+
+@media ( (min-width: 481px) and (max-width: 760px)) {
+    .Container{
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+    }
+    .ContactArea{
+        height: 100%;
+        flex: none;
+    }
+
+    .FormArea{
+        width: 100%;
+        height: 100%;
+        flex: none;
+        padding-top: 20px;
+        margin-bottom: 20px;
+    }
+    .ContactArea h1{
+        font-size: 19px;
+        margin-top: 20px;
+    }
+    .contactInformationArea{
+        height: 130px;
+        margin-bottom: 10px;
+       
+    }
+  
+}
+
+@media ( (min-width: 761px) and (max-width: 960px)) {
+ 
+    .ContactArea{
+        
+        height: 100%;
+        height: 500px;
+        justify-content: flex-start;
+    }
+
+    .FormArea{
+        height: 100%;
+       height: 500px;
+    }
+    .ContactArea h1{
+        font-size: 26px;
+        
+    }
+  
+}
+
+@media ( (min-width: 961px) and (max-width: 1200px)) {
+ 
+    .ContactArea{
+        
+        height: 100%;
+        height: 500px;
+        justify-content: flex-start;
+    }
+
+    .FormArea{
+        height: 100%;
+       height: 500px;
+    }
+    .ContactArea h1{
+        font-size: 26px;
+        
+    }
+  
 }

@@ -6,10 +6,7 @@
     align-items: center;
     position: relative;
     padding: 10px;
-   
     height: 100%;
-    height: calc(100vh - 150px);
-  
 }
 
 .contato{
@@ -31,6 +28,9 @@
     flex-direction: column;
     
     background-color: #000;
+     
+
+  
      
 }
 
@@ -162,3 +162,11 @@
 }
  
  
+
+@media( (min-width: 481px) and (max-width: 760px) ){
+    .formArea{
+        width: 450px;
+        height: 550px;
+
+    }
+}
