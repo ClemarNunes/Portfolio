@@ -95,7 +95,7 @@ const Modal = ({ modalStatus, setModalStatus, data, }: Props) => {
                             // <img key={index} src={item} width={`${750}`} height={`${100}%`}   alt="" />
                            
                             // <Image src={item} layout='fill'   key={index} />
-                            <Image src={item} width={750} height={500}     />
+                            <Image src={item} width={750} height={500} key={index}    />
                             // <img key={index} src={item} width={`${290}`} height={`${350}`} alt="" />
                         ))}
                                            
