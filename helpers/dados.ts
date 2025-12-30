@@ -12,7 +12,8 @@ export const dados = [
             '/assets/dev3.png',
             '/assets/dev4.png',
             '/assets/dev5.png'
-        ]
+        ],
+        slug:'devsfood'
     },
     {
         id: 2,
@@ -26,7 +27,8 @@ export const dados = [
             '/assets/dev3.png',
             '/assets/dev4.png',
             '/assets/dev5.png'
-        ]
+        ],
+        slug:'landingpage'
     },
 
 ]

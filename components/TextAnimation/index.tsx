@@ -77,10 +77,17 @@ import styles from './TextAnimation.module.css'
 
 const TextAnimation = () => {
 
+    // const [state] = useState({
+    //     title: "Hi,",
+    //     titleTwo: "I'm Clemar",
+    //     titleThree: 'Front End Developer',
+    //     image: '/assets/teste.png'
+    // })
+
     const [state] = useState({
-        title: "Hi,",
-        titleTwo: "I'm Clemar",
-        titleThree: 'Front End Developer',
+        title: "Olá,",
+        titleTwo: "Sou Clemar",
+        titleThree: 'Desenvolvedor Front end',
         image: '/assets/teste.png'
     })
 
@@ -102,11 +109,13 @@ const TextAnimation = () => {
                         loop: true,
                         delay: 40,
                         strings: [
-                            'Need A Front End De veloper?',
-                            "Let's Work Together?",
+                            // 'Need A Front End De veloper?',
+                            // "Let's Work Together?",
                             // 'NEED A FRONT END DEVELOPER?',
                             // "LET'S WORK TOGETHER?",
-                           
+                           'Precisa de um site moderno e funcional?',
+                            // 'Precisa de um Desenvolvedor Front End?',
+                            'Vamos trabalhar juntos?'
                         ],
                         
                     }} />

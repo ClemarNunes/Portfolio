@@ -11,18 +11,10 @@ const animations = {
 
 
 const Animation = ({ children }: any) => {
-     
-        
-
-
     return(
         <motion.div initial='initial'  animate='animate'  exit={"fim"}  variants={animations} transition={{  duration: 1.5}}    >
           {children}
         </motion.div>
-
- 
-  
-        
     );
 }
 

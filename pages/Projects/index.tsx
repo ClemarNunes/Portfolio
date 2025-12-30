@@ -3,7 +3,8 @@ import Project from '../../components/Project';
 import Modal from '../../components/Modal';
 import { useState } from 'react';
 import { dados } from '../../helpers/dados'
-
+import { useRouter } from 'next/router';
+import { useIsMobile } from '@/hooks/useIsMobile';
 
 
 
@@ -12,8 +13,22 @@ const Projects = () => {
     const [modalStatus, setModalStatus] = useState(false);
     const [modalData, setModalData] = useState({ image: '', titleProject: '', description: '',images:[] });
 
+
+    const isMobile = useIsMobile();
+    const router = useRouter();
+
+
+
     const handleProjectClick = (item: any) => {
-        setModalData(item)
+
+        if (isMobile) {
+            router.push(`/Projects/${item.slug}`);
+            return;
+        }
+
+        // Desktop
+        setModalData(item);
+        setModalStatus(true); //antes não havia
     }
 
     return (
@@ -29,13 +44,25 @@ const Projects = () => {
                     {dados.map((item, index) => (
                         <div key={index} className={styles.ProjectSection}>
                             <Project setModalStatus={setModalStatus} item={item} onClick={handleProjectClick} />
+                            {/* <Project  item={item} onClick={handleProjectClick} /> */}
                         </div>
                     ))}
                 
                 </div>
 
-                <Modal modalStatus={modalStatus} setModalStatus={setModalStatus} data={modalData} />
-                 
+                {/* <Modal modalStatus={modalStatus} setModalStatus={setModalStatus} data={modalData} /> */}
+                    
+                {!isMobile && (
+                    <Modal
+                        modalStatus={modalStatus}
+                        setModalStatus={setModalStatus}
+                        data={modalData}
+                    />
+                )}
+
+
+
+
             </div>
         </main>
     );

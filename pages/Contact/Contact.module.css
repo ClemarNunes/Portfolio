@@ -5,6 +5,9 @@
     height: auto;
     display: flex;
     min-height: calc(100vh - 150px);
+    border: 1px solid red;
+
+    height: 1000px;
     
 }
 
