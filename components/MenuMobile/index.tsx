@@ -1,5 +1,6 @@
 import { useState } from "react";
-import styles from "./MenuMobile.module.css"
+// import styles from "./MenuMobile.module.css";
+import styles from './MenuMobile.module.css'
 import { MenuMobileLinks } from "../../utils/MenuMobileLinks";
 import Link from "next/link";
 
@@ -25,7 +26,7 @@ const MenuMobile = () => {
                 <div  className={styles.MenuMobile}>
                     <ul>
                         {MenuMobileLinks.map((item, index) => (
-                            <li key={index}>
+                            <li key={index} className={styles.MenuLi}>
                                 <Link href={item.path}>{item.label}</Link>
                             </li>
                         ))}
