@@ -36,7 +36,7 @@ const Projects = () => {
             <div className={styles.areaProject}>
 
                 <div className={styles.title}>
-                    <h1>My Featured Projects</h1>
+                    <h1>Projetos em Destaque</h1>
                 </div>
 
                 <div className={styles.projects}>

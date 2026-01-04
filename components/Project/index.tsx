@@ -1,6 +1,7 @@
 import { ReactElement, useState } from 'react';
 import styles from './Projects.module.css';
 import Link from 'next/link';
+import Tecnology from '../Technology';
 
 
 type Props = {
@@ -13,6 +14,7 @@ type ProjectInfo = {
     titleProject: string;
     image: string;
     description: string;
+    tecnologias: string[];
     
 }
 
@@ -25,25 +27,33 @@ const Project = ({ setModalStatus, item, onClick,  }: Props) => {
 
     return (
         <>
-            <div className={styles.Container}  >
-
-                <div className={styles.projectArea} onClick={handleClick} >
+            <article className={styles.Container}  >
+               
+                <figure  className={styles.projectArea} onClick={handleClick} >  {/* é a tag correta para conteúdo de mídia, como imagens de projetos. */}
 
                     <img src={item.image} height={`${100}%`} width={`${100}%`} alt="" />
 
-                    <div className={styles.tela}>
+                    <figcaption className={styles.tela}> {/* descreve a imagem, melhorando SEO e acessibilidade. */}
 
-                        <span>{item.titleProject}</span>
-                    </div>
-                </div>
+                        <h3>{item.titleProject}</h3>
+                    </figcaption>
+                </figure>
 
                 <div className={styles.ProjectInfo}>
-                    <div className={styles.titleRight}>{item.titleProject} </div>
-                    <div className={styles.descriptionRight}>{item.description} </div>
+                    <div className={styles.titleRight}>{item.titleProject} </div> {/*deve ser substituido por um h2*/}
+                    <p className={styles.descriptionRight}>{item.description} </p>
+                    <section className={styles.tecnologiaArea}>
+                        <h3>Tecnologias</h3>
+                        <ul>
+                            {item.tecnologias.map((item) =>(   
+                                <Tecnology tecnology={item} />
+                            ))}
+                        </ul>
+                    </section>
 
                     <div>
-                        <button className={styles.buttonRight} onClick={handleClick} >
-                            <span>VIEW MORE</span>
+                        <button className={styles.buttonRight} onClick={handleClick}  aria-label={`Ver mais sobre o projeto ${item.titleProject}`}>
+                            <span>Veja Mais</span>
                             <img src="/assets/next.png" height={'auto'} width={15} alt="" />
                         </button>
                     </div>
@@ -51,7 +61,7 @@ const Project = ({ setModalStatus, item, onClick,  }: Props) => {
                 </div>
                
 
-            </div>
+            </article>
         </>
     );
 }

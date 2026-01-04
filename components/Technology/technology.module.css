@@ -1,0 +1,14 @@
+.tecnologias{
+    background-color: #e5e5e5;
+    color: #525252;
+    width: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    padding: 5px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px; 
+}

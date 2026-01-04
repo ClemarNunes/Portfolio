@@ -1,0 +1,15 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  margin-top: 40px;
+}
+
+.imageWrapper {
+  position: relative; /* necessário para fill */
+  width: 100%;
+  aspect-ratio: 16 / 9; /* altura proporcional à largura */
+  border-radius: 12px;
+  overflow: hidden;
+ 
+}
