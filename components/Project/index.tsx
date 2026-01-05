@@ -2,7 +2,7 @@ import { ReactElement, useState } from 'react';
 import styles from './Projects.module.css';
 import Link from 'next/link';
 import Tecnology from '../Technology';
-
+import Image from 'next/image';
 
 type Props = {
     setModalStatus: (setModalStatus: boolean) => void;
@@ -31,8 +31,8 @@ const Project = ({ setModalStatus, item, onClick,  }: Props) => {
                
                 <figure  className={styles.projectArea} onClick={handleClick} >  {/* é a tag correta para conteúdo de mídia, como imagens de projetos. */}
 
-                    <img src={item.image} height={`${100}%`} width={`${100}%`} alt="" />
-
+                    {/* <img src={item.image} height={`${100}%`} width={`${100}%`} alt="" /> */}
+                    <Image src={item.image} alt={item.titleProject} layout="fill" objectFit="cover" priority={false} />
                     <figcaption className={styles.tela}> {/* descreve a imagem, melhorando SEO e acessibilidade. */}
 
                         <h3>{item.titleProject}</h3>
@@ -59,8 +59,6 @@ const Project = ({ setModalStatus, item, onClick,  }: Props) => {
                     </div>
 
                 </div>
-               
-
             </article>
         </>
     );
