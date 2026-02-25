@@ -25,11 +25,13 @@
     flex-direction: column;
 
     height: 100%;
+    border: 1px solid red;
+   
 }
 .ProjectSection {
-    height: 400px;
     width: 100%;
     margin-bottom: 25px;
+    height: 100%;
 }
 @media (max-width: 330px){   
     .title {
@@ -50,6 +52,7 @@
     }
     .ProjectSection {
         height: auto;     
+        
     }
 }
 @media ((min-width: 481px) and (max-width: 760px)){

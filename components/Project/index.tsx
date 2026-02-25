@@ -40,7 +40,7 @@ const Project = ({ setModalStatus, item, onClick,  }: Props) => {
                 </figure>
 
                 <div className={styles.ProjectInfo}>
-                    <div className={styles.titleRight}>{item.titleProject} </div> {/*deve ser substituido por um h2*/}
+                    <h2 className={styles.titleRight}>{item.titleProject} </h2> {/*deve ser substituido por um h2*/}
                     <p className={styles.descriptionRight}>{item.description} </p>
                     <section className={styles.tecnologiaArea}>
                         <h3>Tecnologias</h3>
